@@ -22,6 +22,11 @@ describe('hnp', function () {
 			}
 		}
 	};
+	describe('(object, path) - with a null object given', function () {
+		it('should return false', function () {
+			assert.equal(hnp(null, 'a'), false);
+		});
+	})
 	describe('(object, path) - with a single property path', function () {
 		it('should have the property', function () {
 			assert.equal(hnp(object, 'a'), true);
