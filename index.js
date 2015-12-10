@@ -60,16 +60,12 @@ function removeEnclosing(string){
  */
 
 function parsePath(path){
-	var parts = [];
-	var matchBracket = /^(.*)?\[(.*)\]$/;
-	path.split('.').forEach(function(part){
-		var match = part.match(matchBracket);
-		if(match){
-			if(match[1]) parts.push(match[1]); // "if" handle this case "['l-ol'].otherkey"
-			parts.push(removeEnclosing(match[2]));
-		}else{
-			parts.push(part);
-		}
-	});
+	var parts = path
+		.replace(/\]|\[/g,'.')
+		.split('.')
+		.filter(function(token) {
+			return token.trim().length > 0;
+		})
+		.map(removeEnclosing);
 	return parts;
 }

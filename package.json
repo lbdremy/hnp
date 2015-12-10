@@ -4,7 +4,7 @@
   "description": "The hasNestedProperty method missing in Object. This module does not extend Object.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha test/*-test.js"
   },
   "repository": "",
   "keywords": [
@@ -15,5 +15,8 @@
     "lookup"
   ],
   "author": "Remy Loubradou",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^2.3.4"
+  }
 }
