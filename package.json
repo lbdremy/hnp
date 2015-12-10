@@ -1,6 +1,6 @@
 {
   "name": "hnp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The hasNestedProperty method missing in Object. This module does not extend Object.",
   "main": "index.js",
   "scripts": {
