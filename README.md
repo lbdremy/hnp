@@ -1,5 +1,7 @@
 # hnp - hasNestedProperty method
 
+[![](https://secure.travis-ci.org/lbdremy/hnp.png)](http://travis-ci.org/#!/lbdremy/hnp)
+
 # Usage
 
 ```js
