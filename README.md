@@ -21,7 +21,7 @@ if(hasNestedProperty(o,'lol.no') === false) console.log('no property is not avai
 
 # Licence
 
-Copyright(C) 2012 Rémy Loubradou
+Copyright(C) 2012-2015 Rémy Loubradou
 
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
 				Version 2, December 2004 
