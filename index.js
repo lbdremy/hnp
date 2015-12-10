@@ -12,6 +12,7 @@ module.exports = hasNestedProperty;
 
 function hasNestedProperty (object,path){
 	if(typeof object !== 'object') return false;
+	if(object === null) return false;
 
 	if(typeof path === 'string'){
 		var parts = parsePath(path);
